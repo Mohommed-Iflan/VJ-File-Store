@@ -40,3 +40,22 @@ async def start_handler(client, message):
 
 # Run the bot
 app.run()
+
+
+# --- This keeps the instance alive on platforms like Koyeb ---
+from flask import Flask
+from threading import Thread
+
+web = Flask('')
+
+@web.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    web.run(host='0.0.0.0', port=8080)
+
+Thread(target=run).start()
+# -------------------------------------------------------------
+
+app.run()
