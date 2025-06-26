@@ -20,11 +20,11 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "25399581"))
 API_HASH = environ.get("API_HASH", "78e8a7d45e41484937c47acfdf1f6433")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7898302379:AAH2w4kbPIukPTmTKOzCnUJ7n8jRWAjRUrI")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6322672707').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "Benthamizha_Direct_link_bot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "Bnthmzhadwnbot) # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001900360343"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002768282561"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
@@ -67,7 +67,7 @@ VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-WEBSITE_URL = environ.get("WEBSITE_URL", "https://tamilben.blogspot.com/2025/06/benthamizha.html") # For More Information Check Video On Yt - @Tech_VJ
+WEBSITE_URL = environ.get("WEBSITE_URL", "https://tamilben.blogspot.com/2025/06/bot.html") # For More Information Check Video On Yt - @Tech_VJ
 
 # File Stream Config
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
@@ -80,7 +80,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://tamilben.blogspot.com/2025/06/benthamizha.html")
+URL = environ.get("URL", "https://tamilben.blogspot.com/2025/06/bot.html")
 
 
 # Don't Remove Credit Tg - @VJ_Botz
